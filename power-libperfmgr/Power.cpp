@@ -41,6 +41,10 @@
 #define TAP_TO_WAKE_NODE2 "/proc/touchscreen/enable_dt2w"
 #endif
 
+#ifndef TAP_TO_WAKE_NODE3
+#define TAP_TO_WAKE_NODE3 "/proc/touchpanel/wake_gesture"
+#endif
+
 extern struct stat_pair rpm_stat_map[];
 
 namespace android {
@@ -231,6 +235,7 @@ Return<void> Power::setFeature(Feature feature, bool activate)  {
         case Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
             ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE, true);
             ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE2, true);
+            ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE3, true);
             break;
 #endif
         default:
