@@ -25,12 +25,6 @@
     <integer name="config_maxVisibleNotificationIcons">7</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">8</integer>
 
-    <!-- Doze: check proximity sensor before pulsing? -->
-    <bool name="doze_proximity_check_before_pulse">true</bool>
-
-    <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
-    <bool name="doze_display_state_supported">true</bool>
-
     <!-- Whether to show biometric help only when failed -->
     <bool name="config_biometricHelpShowOnlyWhenFailed">true</bool>
     

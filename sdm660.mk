@@ -397,7 +397,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay \
-    $(COMMON_PATH)/overlay-evolution \
+    $(COMMON_PATH)/overlay-zenx \
     $(COMMON_PATH)/overlay-system
 
 # Powerhint
